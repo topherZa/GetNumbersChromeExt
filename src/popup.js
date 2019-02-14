@@ -1,25 +1,4 @@
 let findBtn = document.getElementById('FindButton');
-let groupNameInput = document.getElementById('GroupName');
-
-// chrome.storage.sync.get('groupName', function (data) {
-
-//     groupNameInput.setAttribute('value', data.groupName);
-
-// });
-
-
-function listener(event) {
-    alert("gonna get");
-
-
-    if (event.detail) {
-        alert("Message received " + event.detail);
-        groupNameInput.setAttribute("value", event.detail);
-    }
-};
-
-
-window.addEventListener('myEvent', listener, false);
 
 
 findBtn.onclick = function (element) {
